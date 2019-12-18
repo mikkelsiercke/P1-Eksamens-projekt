@@ -81,7 +81,7 @@ void setup() {
   //Setup constructors for Graphic
   sceneBg = new Graphic(sceneBg_img, 0, 0, width, height);
   
-  boardText = new Graphic(145, 120, "1. Vælgt et papir\n2. Klik på X for at komme tilbage\n3. Dobbeltklik for at vælge et nyt papir");
+  boardText = new Graphic(145, 120, "1. Vælg et papir\n2. Klik på X for at komme tilbage\n3. Dobbeltklik for at vælge et nyt papir");
 
   final float middle = width/2;
   final float subTextY = 480;
@@ -168,14 +168,6 @@ void openScene(Controls open, int pageNr, Graphic scene) {
 }
 
 void mousePressed() {
-  //https://forum.processing.org/two/discussion/558/creating-a-next-page-button
-  //if (mouseButton == LEFT) {
-  //  if (page > 0 && backBt.mouseOver()) {
-  //    --page;
-  //  } else if (page < 3 && scene2Bt.mouseOver()) { 
-  //    ++page;
-  //  }
-  //}
   openScene(scene1Bt, 1, scene1);
   closeBt(close1, scene1);
 
